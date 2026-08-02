@@ -1,7 +1,26 @@
 aid: switch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/switch.png
 name: Switch
-description: Switch is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Switch (operating as Livekick at livekick.com) is a 500 Global-backed company running
+  a virtual fitness and yoga SaaS platform. The Livekick Serve product lets movement teachers and
+  wellness creators deliver live and on-demand classes, videos, courses, and programs to students and
+  communities, with subscription billing and creator tooling to grow an online audience. The public
+  surface is a consumer/creator web and mobile application backed by an internal Django REST API; as of
+  this enrichment pass Livekick publishes no public developer program — no developer portal,
+  documentation, OpenAPI specification, SDKs, MCP server, or security.txt (all /.well-known and
+  /llms.txt paths return the single-page-app shell). This profile is therefore identity-only, enriched
+  with a probed domain-security posture rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/switch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-operates-as: Livekick
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fitness
+- Yoga
+- Wellness
+- Virtual Classes
+- Creator Platform
+- SaaS
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/switch-domain-security.yml
 - type: Website
   url: https://livekick.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
