@@ -42,7 +42,7 @@ x-tier-reason: portfolio-lead
 x-operates-as: Livekick
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Fitness
@@ -68,6 +68,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://www.livekick.com/blog/
+  type: Blog
 - type: DomainSecurity
   url: security/switch-domain-security.yml
 - type: Website
